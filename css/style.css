@@ -1,1 +1,115 @@
 /*stylesheet*/
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+#masthead {
+	background-color: blue;
+}
+
+#nav {
+	background-color: black;
+}
+
+#logo {
+	padding-top: 2em;
+}
+
+#logo a {
+  color: var(--body-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#nav .nav-menu-holder {
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  align-items: center;
+}
+
+#nav ul.nav-menu {
+  width: 100%;
+  columns: 4;
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
+#nav ul.nav-menu li {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+  
+#nav ul.nav-menu li a {
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+}
+
+#nav ul.nav-menu li a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  background: linear-gradient(0deg, var(--loco-yellow) 40%, transparent 40%);
+  z-index: -1;
+  transition: opacity .3s ease-in-out;
+  opacity: 0;
+}
+
+#nav ul.nav-menu li a:hover::before, #nav ul.nav-menu li a.active::before {
+  opacity: 1;
+}
+
+@media all and (max-width: 699px) { 
+
+  #masthead {
+    padding-bottom: 2em;
+  }
+
+  #logo a {
+    justify-content: center;
+    margin: 1em 0;
+  }
+
+  #logo img {
+    height: auto;
+    width: 10em;
+  }
+
+  #nav ul.nav-menu {
+    justify-content: space-around;
+  }
+
+  #nav ul.nav-menu li {
+    text-align: left;
+    text-align: center;
+  }
+
+  #nav ul.nav-menu li:last-child {
+    margin-right: 0;
+  }
+
+  #nav ul.nav-menu li:first-child {
+    margin-left: 0;
+  }
+
+}
