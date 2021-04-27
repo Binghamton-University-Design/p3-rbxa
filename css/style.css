@@ -1,24 +1,121 @@
 /*stylesheet*/
 
+/*colors
+	dark navy: #05003A;
+	navy: #1E0066;
+	purple: #683C5B;
+	red: #8E3039;
+	pink: #D3837F;
+	orange: #FF9A40;
+	yellow: #F4D162;
+	cream: #FFF7D7;
+*/
+
+:root {
+	--base-font-size: 16px;
+	--fluid-typography-ratio: 0.9;
+}
+
 body {
 	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	background: url('../images/sunset-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 24pt;
+	text-align: center;
+	color: #FF9A40;
+	margin: 1em;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-weight: 200;
+	font-style: italic;
+	font-size: 18pt;
+	text-align: center;
+	color: #FFF7D7;
+	margin: 0 auto;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 18pt;
+	color: #F4D162;
+}
+
+li a {
+	font-weight: 600;
+	font-size: 12pt;
+	text-align: center;
+	color: #FF9A40;
+}
+
+p {
+	font-weight: 400;
+	font-size: 14pt;
+	color: #D3837F;
+}
+
+.yellow {
+	color: #F4D162;
+}
+
+#dreamers {
+	margin: 0 auto;
+	max-width: 200px;
+}
+
+#icon img {
+	margin: 0 auto;
+	max-width: 36px;
+}
+
+#map img {
+	width: 100%;
+	height: auto;
+}
+
+.spacer-250 {
+	margin: 250px;
+}
+
+.spacer-100 {
+	margin: 100px;
+}
+
+.spacer-60 {
+	margin-top: 60px;
 }
 
 .wrapper {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1400px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 0, 102, 0.5));
+	top: 0;
+}
+
+.text-wrapper {
+	margin: 0 auto;
+	max-width: 450px;
 }
 
 #masthead {
-	background-color: blue;
 }
 
 #nav {
-	background-color: black;
+	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .9), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+	position: fixed;
+	top: 0;
 }
 
 #logo {
 	padding-top: 2em;
+	padding-bottom: 1em;
 }
 
 #logo a {
@@ -30,7 +127,7 @@ body {
 }
 
 #logo img {
-	width: 100%;
+	width: 80%;
 	height: auto;
 	display: block;
 }
@@ -44,7 +141,7 @@ body {
 
 #nav ul.nav-menu {
   width: 100%;
-  columns: 4;
+  columns: 6;
   list-style: none;
   padding: 0; 
   margin: 0;
@@ -79,6 +176,27 @@ body {
   opacity: 1;
 }
 
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #05003A;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: url('../images/scroll-sun.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* MEDIA */
+
 @media all and (max-width: 699px) { 
 
   #masthead {
@@ -110,6 +228,21 @@ body {
 
   #nav ul.nav-menu li:first-child {
     margin-left: 0;
+  }
+
+}
+
+@media all and (min-width: 700px) {
+
+	body {
+		font-size: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+	}
+}
+
+@media all and (min-width: 1800px) {
+
+  body{
+    font-size: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 18px);
   }
 
 }
