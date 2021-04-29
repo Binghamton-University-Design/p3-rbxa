@@ -48,7 +48,7 @@ h3 {
 	color: #F4D162;
 }
 
-li a {
+li.nav a {
 	font-weight: 600;
 	font-size: 12pt;
 	text-align: center;
@@ -79,6 +79,13 @@ p-cream {
 	color: #FFF7D7;
 }
 
+p2-orange {
+	font-weight: 400;
+	font-size: 12pt;
+	color: #FF9A40;
+	text-align: center;
+}
+
 .yellow {
 	color: #F4D162;
 }
@@ -88,9 +95,23 @@ p-cream {
 	max-width: 200px;
 }
 
-#icon img {
+#icon1 img {
 	margin: 0 auto;
-	max-width: 36px;
+	display: block;
+}
+
+ul.locations {
+	list-style-image: url('../images/sunset-icon-36.png');
+	width: 100%;
+	columns: 2;
+	padding: 0; 
+	margin: 0;
+}
+
+li.locations {
+	font-weight: 400;
+	font-size: 14pt;
+	color: #FF9A40;
 }
 
 /* SPACERS */
@@ -146,6 +167,8 @@ p-cream {
 	height: auto;
 	display: block;
 }
+
+/* NAV */
 
 #nav .nav-menu-holder {
   width: 100%;
