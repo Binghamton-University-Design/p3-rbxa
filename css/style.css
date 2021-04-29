@@ -55,10 +55,28 @@ li a {
 	color: #FF9A40;
 }
 
-p {
+p-pink {
 	font-weight: 400;
 	font-size: 14pt;
 	color: #D3837F;
+}
+
+p-orange {
+	font-weight: 400;
+	font-size: 14pt;
+	color: #FF9A40;
+}
+
+p-yellow {
+	font-weight: 400;
+	font-size: 14pt;
+	color: #F4D162;
+}
+
+p-cream {
+	font-weight: 400;
+	font-size: 14pt;
+	color: #FFF7D7;
 }
 
 .yellow {
@@ -80,6 +98,7 @@ p {
 	height: auto;
 }
 
+/* SPACERS */
 .spacer-250 {
 	margin: 250px;
 }
@@ -91,6 +110,7 @@ p {
 .spacer-60 {
 	margin-top: 60px;
 }
+
 
 .wrapper {
 	margin: 0 auto;
@@ -159,36 +179,88 @@ p {
   z-index: 0;
 }
 
-#nav ul.nav-menu li a::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 10%;
-  left: 0;
-  background: linear-gradient(0deg, var(--loco-yellow) 40%, transparent 40%);
-  z-index: -1;
-  transition: opacity .3s ease-in-out;
-  opacity: 0;
+/* Tree */
+
+#tree {
+  overflow: hidden;
 }
 
-#nav ul.nav-menu li a:hover::before, #nav ul.nav-menu li a.active::before {
-  opacity: 1;
+#tree img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
+#tree-inner {
+  position: relative;
+}
+
+#tree-inner .bird-overlay {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 45%;
+  right: 2rem;
+  top: 2rem;
+  border: 1px solid black;
+  background: #fff;
+}
+
+.stuff {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid black;
+}
+
+#tree-inner .bird-overlay p:last-child {
+  margin-bottom: 0;
+}
+
+#tree-inner .bird-overlay p:first-child {
+  margin-top: 0;
+}
+
+#tree-inner .bird {
+  position: absolute;
+  z-index: 1;
+  width: 6%;
+  height: 7%;
+  left: 16%;
+  top: 27%;
+  border: 5px solid red;
+}
+
+.close-icon {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  display:block;
+  box-sizing:border-box;
+  width:1rem;
+  height:1rem;
+  border-width:1px;
+  border-style: solid;
+  border-color:transparent;
+  border-radius:100%;
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, black 46%,  black 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, black 46%,  black 56%,transparent 56%, transparent 100%);
+  background-color:white;
+  transition: all 0.3s ease;
+}
+
 
 /* SCROLL BAR */
 
-/* width */
+	/* width */
 ::-webkit-scrollbar {
   width: 20px;
 }
 
-/* Track */
+	/* Track */
 ::-webkit-scrollbar-track {
   background: #05003A;
 }
 
-/* Handle */
+	/* Handle */
 ::-webkit-scrollbar-thumb {
   background: url('../images/scroll-sun.png');
   background-repeat: no-repeat;
