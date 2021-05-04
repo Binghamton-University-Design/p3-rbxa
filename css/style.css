@@ -261,7 +261,7 @@ a[title]:hover::after {
   height: 6%;
   left: 6.5%;
   top: 68%;
-  border: 5px solid red;
+ /* border: 5px solid red; */
 }
 
 #map-inner .target {
@@ -271,7 +271,7 @@ a[title]:hover::after {
   height: 6%;
   left: 34.5%;
   top: 63%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 #map-inner .memorial {
@@ -281,7 +281,7 @@ a[title]:hover::after {
   height: 6%;
   left: 44%;
   top: 51%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 #map-inner .app {
@@ -291,7 +291,7 @@ a[title]:hover::after {
   height: 6%;
   left: 47%;
   top: 75%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 #map-inner .rec-park {
@@ -301,7 +301,7 @@ a[title]:hover::after {
   height: 6%;
   left: 61.5%;
   top: 52%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 #map-inner .spring-forest {
@@ -311,7 +311,7 @@ a[title]:hover::after {
   height: 6%;
   left: 65.4%;
   top: 35%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 #map-inner .hawley {
@@ -321,7 +321,7 @@ a[title]:hover::after {
   height: 6%;
   left: 69.4%;
   top: 56%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 #map-inner .castle {
@@ -331,7 +331,7 @@ a[title]:hover::after {
   height: 6%;
   left: 89%;
   top: 42%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 
