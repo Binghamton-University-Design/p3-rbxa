@@ -148,12 +148,42 @@ li.locations a {
 	text-decoration: none;
 }
 
-a[title]:hover::after {
+/* a[title]:hover::after {
   content: attr(title);
   position: absolute;
   top: -100%;
   left: 0;
+  color: #F4D162;
+} */
+
+/* [data-title] {
+  position: relative;
 }
+
+[data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -26px;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 2px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+
+[data-title]:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 8px;
+  display: inline-block;
+  color: #fff;
+  border: 8px solid transparent;	
+  border-bottom: 8px solid #000;
+} */
 
 /* SPACERS */
 .spacer-150 {
@@ -179,6 +209,11 @@ a[title]:hover::after {
 .text-wrapper {
 	margin: 0 auto;
 	width: 450px;
+}
+
+.map-wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 #masthead {
@@ -245,6 +280,7 @@ a[title]:hover::after {
 }
 
 #map img {
+  margin: 0 auto;
   width: 100%;
   height: auto;
   display: block;
@@ -254,84 +290,84 @@ a[title]:hover::after {
   position: relative;
 }
 
-#map-inner .roundtop {
-  position: absolute;
-  z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 6.5%;
-  top: 68%;
- /* border: 5px solid red; */
-}
-
 #map-inner .target {
   position: absolute;
   z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 34.5%;
-  top: 63%;
-  /* border: 5px solid red; */
+  width: 3%;
+  height: 7.5%;
+  left: 9.5%;
+  top: 71%;
+  border: 5px solid red;
 }
 
 #map-inner .memorial {
   position: absolute;
   z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 44%;
-  top: 51%;
-  /* border: 5px solid red; */
+  width: 3%;
+  height: 7.5%;
+  left: 23.5%;
+  top: 57%;
+  border: 5px solid red;
 }
 
 #map-inner .app {
   position: absolute;
   z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 47%;
-  top: 75%;
-  /* border: 5px solid red; */
+  width: 3%;
+  height: 7.5%;
+  left: 27.5%;
+  top: 86%;
+  border: 5px solid red;
+}
+
+#map-inner .calvary {
+  position: absolute;
+  z-index: 1;
+  width: 3%;
+  height: 7.5%;
+  left: 29.7%;
+  top: 8.5%;
+  border: 5px solid red;
 }
 
 #map-inner .rec-park {
   position: absolute;
   z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 61.5%;
-  top: 52%;
-  /* border: 5px solid red; */
+  width: 3%;
+  height: 7.5%;
+  left: 49.4%;
+  top: 58%;
+  border: 5px solid red;
 }
 
 #map-inner .spring-forest {
   position: absolute;
   z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 65.4%;
-  top: 35%;
-  /* border: 5px solid red; */
+  width: 3%;
+  height: 7.5%;
+  left: 54.4%;
+  top: 37%;
+  border: 5px solid red;
 }
 
 #map-inner .hawley {
   position: absolute;
   z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 69.4%;
-  top: 56%;
-  /* border: 5px solid red; */
+  width: 3%;
+  height: 7.5%;
+  left: 61.5%;
+  top: 63%;
+  border: 5px solid red;
 }
 
 #map-inner .castle {
   position: absolute;
   z-index: 1;
-  width: 2.5%;
-  height: 6%;
-  left: 89%;
-  top: 42%;
-  /* border: 5px solid red; */
+  width: 3%;
+  height: 7.5%;
+  left: 90.5%;
+  top: 45.5%;
+  border: 5px solid red;
 }
 
 
