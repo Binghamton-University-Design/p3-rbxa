@@ -134,6 +134,7 @@ p-cream {
 }
 
 ul.locations {
+  list-style-position: inside;
 	list-style-image: url('../images/sunset-icon-36.png');
 	width: 100%;
 	columns: 2;
@@ -198,8 +199,8 @@ li.locations a {
 	padding-top: 60px;
 }
 
-
 .wrapper {
+  position: relative;
 	margin: 0 auto;
 	max-width: 1400px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(30, 0, 102, 0.6));
@@ -216,46 +217,61 @@ li.locations a {
 	max-width: 1200px;
 }
 
+.locations-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.masthead-wrapper {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
+
 #masthead {
+  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
 }
 
-#nav {
+#masthead-inner {
 	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .9), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
-	position: fixed;
-	top: 0;
-}
-
-#logo {
-	padding-top: 2em;
-	padding-bottom: 1em;
-}
-
-#logo a {
-  color: var(--body-color);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #logo img {
 	width: 80%;
 	height: auto;
 	display: block;
+  padding: 2rem;
 }
 
 /* NAV */
 
-#nav .nav-menu-holder {
+.nav-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 99998;
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
-  display: flex; 
+}
+
+#nav {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  background: #000;
+}
+
+#nav .nav-menu-holder {
 }
 
 #nav ul.nav-menu {
   width: 100%;
-  columns: 6;
+  text-align: center;
   list-style: none;
   padding: 0; 
   margin: 0;
@@ -265,12 +281,25 @@ li.locations a {
   color: #fff;
   position: relative;
   text-decoration: none;
+  padding: 2rem;
 }
   
 #nav ul.nav-menu li a {
+  font-size: 1.5rem;
   text-decoration: none;
   position: relative;
-  z-index: 0;
+}
+
+.menu {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu a {
+  font-size: 3rem;
+  color: #FF9A40;
 }
 
 /* MAP */
@@ -398,31 +427,25 @@ li.locations a {
     padding-bottom: 2em;
   }
 
-  #logo a {
-    justify-content: center;
-    margin: 1em 0;
-  }
-
   #logo img {
-    height: auto;
-    width: 10em;
+    padding: 1rem;
   }
 
-  #nav ul.nav-menu {
-    justify-content: space-around;
+  .menu {
+    padding: 1rem;
   }
 
-  #nav ul.nav-menu li {
-    text-align: left;
-    text-align: center;
+  .menu a {
+    font-size: 2rem;
+    color: #FF9A40;
   }
 
-  #nav ul.nav-menu li:last-child {
-    margin-right: 0;
+  .locations-wrapper {
+    margin: 0 1rem;
   }
 
-  #nav ul.nav-menu li:first-child {
-    margin-left: 0;
+  ul.locations {
+    columns: 1;
   }
 
 }

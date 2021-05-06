@@ -19,34 +19,44 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
-		<div class="wrapper">
+
+		<div class="nav-wrapper">
+			<div id="nav">
+				<div class="nav-menu-holder">
+					<ul class="nav-menu">
+				      <li class="nav"><a href="map.html">MAP</a></li>
+				      <li class="nav"><a href="calendar.html">CALENDAR</a></li>
+				      <li class="nav"><a href="great.html">WHAT MAKES A<br>GREAT SUNSET?</a></li>
+				      <li class="nav"><a href="present.html">BEING<br>PRESENT</a></li>
+				      <li class="nav"><a href="tunes.html">TUNES</a></li>
+				      <li class="nav"><a href="about.html">ABOUT</a></li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="masthead-wrapper">
 			<div id="masthead">
-				<div id="nav" class="grid">
-					<div class="width-2-12 width-12-12-m">
+				<div class="grid" id="masthead-inner">
+					<div class="width-3-12 width-4-12-m">
 						<div id="logo">
 							<a href="index.html">
 								<img src="images/sunset-logo.png">
 							</a>
 						</div>
 					</div>
-					<div class="width-1-12"></div>
-					<div class="width-9-12 width-12-12-m">
-						<div class="nav-menu-holder">
-							<ul class="nav-menu">
-						      <li class="nav"><a href="map.html">MAP</a></li><br>
-						      <li class="nav"><a href="calendar.html">CALENDAR</a></li>
-						      <li class="nav"><a href="great.html">WHAT MAKES A<br>GREAT SUNSET?</a></li>
-						      <li class="nav"><a href="present.html">BEING<br>PRESENT</a></li>
-						      <li class="nav"><a href="tunes.html">TUNES</a></li><br>
-						      <li class="nav"><a href="about.html">ABOUT</a></li>
-						    </ul>
-						</div>
+					<div class="width-9-12 width-8-12-m menu">
+						<a class="toggle-nav" href=""><i class="fa fa-bars"></i></a>
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="wrapper">
 
 			<div class="text-wrapper">
 				<div class="spacer-150"></div>
@@ -79,9 +89,9 @@
 				<h4>Click on any location to learn more.</h4>
 			</div>
 
-			<div class="grid">
-				<div class="width-2-12" class="width-0-12-m"></div>
-				<div class="width-10-12" class="width-12-12-m">
+			<div class="locations-wrapper">
+				<div class="grid">
+				<div class="width-12-12 width-12-12-m">
 					<ul class="locations">
 						<li class="locations"><a href="locations/target.html"><p-cream>Parking lot at Target, </p-cream><p-orange>Vestal </p-orange></a></li>
 						<li class="locations"><a href="locations/memorial.html"><p-cream>Vestal Hills Memorial Park, </p-cream><p-orange>Vestal </p-orange></a></li>
@@ -93,6 +103,7 @@
 						<li class="locations"><a href="locations/castle.html"><p-cream>The Castle, </p-cream><p-orange>East Side </p-orange><p-yellow>*</p-yellow></a></li>
 					</ul>
 				</div>
+			</div>
 			</div>
 
 			<div class="text-wrapper">

@@ -2,5 +2,11 @@
 
 $(document).ready(function() {
 
-console.log('hello');
+$( ".toggle-nav" ).click(function() {
+  $( ".nav-wrapper" ).fadeToggle( "slow", "linear" );
+  event.preventDefault();
+  event.stopPropagation();
+});
+
+});
 
