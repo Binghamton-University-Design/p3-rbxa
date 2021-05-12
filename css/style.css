@@ -297,10 +297,34 @@ li.locations a {
   justify-content: flex-end;
 }
 
-.menu a {
+.menu a.toggle-nav {
   font-size: 3rem;
   color: #FF9A40;
+  display: none;
 }
+
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
+.desktop-menu a {
+  flex-grow: 1;
+  padding: 2rem 0;
+  color: #FF9A40;
+  text-decoration: none;
+}
+
+.desktop-menu a:hover, .desktop-menu a.active {
+  text-decoration: underline;
+}
+
 
 /* MAP */
 
@@ -446,6 +470,18 @@ li.locations a {
 
   ul.locations {
     columns: 1;
+  }
+
+}
+
+@media all and (max-width: 960px) { 
+
+  .menu a.toggle-nav {
+    display: block;
+  }
+
+  .desktop-menu {
+    display: none;
   }
 
 }
