@@ -75,7 +75,7 @@
 @media (min-width: 700px) {
 
   .grid {
-    grid-gap: 2rem;
+    grid-gap: 0;
   }
 
   .width-1-12 {

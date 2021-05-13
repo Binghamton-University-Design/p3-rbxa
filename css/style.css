@@ -149,6 +149,13 @@ p-cream {
 	height: auto;
 }
 
+#loc-photo img {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	padding: 18px;
+}
+
 ul.locations {
   list-style-position: inside;
 	list-style-image: url('../images/sunset-icon-36.png');
@@ -171,6 +178,10 @@ li.locations a {
 	padding: 150px;
 }
 
+.spacer-100 {
+	padding: 100px;
+}
+
 .spacer-80 {
 	padding: 80px;
 }
@@ -179,6 +190,17 @@ li.locations a {
 	padding-top: 60px;
 }
 
+.spacer-20 {
+	padding: 20px;
+}
+
+.spacer-10 {
+	padding: 10px;
+}
+
+.spacer-5 {
+	padding: 5px;
+}
 
 .wrapper {
   position: relative;
