@@ -74,6 +74,12 @@ h6 {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	font-weight: 600;
+	color: #F4D162;
+}
+
 li.nav a {
 	font-weight: 600;
 	font-size: 12pt;
@@ -85,6 +91,7 @@ p-pink {
 	font-weight: 400;
 	font-size: 14pt;
 	color: #D3837F;
+	line-height: 1.4;
 }
 
 p-orange {
@@ -97,6 +104,7 @@ p-yellow {
 	font-weight: 400;
 	font-size: 14pt;
 	color: #F4D162;
+	line-height: 1.4;
 }
 
 p-cream {
@@ -117,9 +125,17 @@ p-cream {
 	color: #FFF7D7;
 }
 
+.red {
+	color: #8E3039;
+}
+
 #dreamers {
 	margin: 0 auto;
 	max-width: 200px;
+}
+
+#right {
+	text-align: right;
 }
 
 #icon-c img {
@@ -149,42 +165,6 @@ li.locations a {
 	text-decoration: none;
 }
 
-/* a[title]:hover::after {
-  content: attr(title);
-  position: absolute;
-  top: -100%;
-  left: 0;
-  color: #F4D162;
-} */
-
-/* [data-title] {
-  position: relative;
-}
-
-[data-title]:hover::before {
-  content: attr(data-title);
-  position: absolute;
-  bottom: -26px;
-  display: inline-block;
-  padding: 3px 6px;
-  border-radius: 2px;
-  background: #000;
-  color: #fff;
-  font-size: 12px;
-  font-family: sans-serif;
-  white-space: nowrap;
-}
-
-[data-title]:hover::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 8px;
-  display: inline-block;
-  color: #fff;
-  border: 8px solid transparent;	
-  border-bottom: 8px solid #000;
-} */
 
 /* SPACERS */
 .spacer-150 {
@@ -198,6 +178,7 @@ li.locations a {
 .spacer-60 {
 	padding-top: 60px;
 }
+
 
 .wrapper {
   position: relative;
@@ -322,9 +303,15 @@ li.locations a {
 }
 
 .desktop-menu a:hover, .desktop-menu a.active {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #F4D162;
+  font-weight: 600;
 }
 
+a#current {
+  color: #8E3039;
+  font-weight: 600;
+}
 
 /* MAP */
 
@@ -350,7 +337,7 @@ li.locations a {
   height: 7.5%;
   left: 9.5%;
   top: 71%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 #map-inner .memorial {
@@ -360,7 +347,7 @@ li.locations a {
   height: 7.5%;
   left: 23.5%;
   top: 57%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 #map-inner .app {
@@ -370,7 +357,7 @@ li.locations a {
   height: 7.5%;
   left: 27.5%;
   top: 86%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 #map-inner .calvary {
@@ -380,7 +367,7 @@ li.locations a {
   height: 7.5%;
   left: 29.7%;
   top: 8.5%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 #map-inner .rec-park {
@@ -390,7 +377,7 @@ li.locations a {
   height: 7.5%;
   left: 49.4%;
   top: 58%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 #map-inner .spring-forest {
@@ -400,7 +387,7 @@ li.locations a {
   height: 7.5%;
   left: 54.4%;
   top: 37%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 #map-inner .hawley {
@@ -410,7 +397,7 @@ li.locations a {
   height: 7.5%;
   left: 61.5%;
   top: 63%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 #map-inner .castle {
@@ -420,7 +407,7 @@ li.locations a {
   height: 7.5%;
   left: 90.5%;
   top: 45.5%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 
