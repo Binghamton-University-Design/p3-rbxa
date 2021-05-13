@@ -147,6 +147,7 @@ p-cream {
 	margin: 0 auto;
 	width: 48px;
 	height: auto;
+	display: block;
 }
 
 #loc-photo img {
@@ -154,6 +155,7 @@ p-cream {
 	width: 100%;
 	height: auto;
 	padding: 18px;
+	display: block;
 }
 
 ul.locations {
@@ -220,9 +222,9 @@ li.locations a {
 	max-width: 1200px;
 }
 
-.locations-wrapper {
+.loc-wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 800px;
 }
 
 .masthead-wrapper {
