@@ -98,6 +98,7 @@ p-orange {
 	font-weight: 400;
 	font-size: 14pt;
 	color: #FF9A40;
+	line-height: 1.4;
 }
 
 p-yellow {
@@ -159,7 +160,7 @@ p-cream {
 }
 
 ul.locations {
-  list-style-position: inside;
+  	list-style-position: inside;
 	list-style-image: url('../images/sunset-icon-36.png');
 	width: 100%;
 	columns: 2;
@@ -172,6 +173,14 @@ li.locations a {
 	font-size: 14pt;
 	color: #FF9A40;
 	text-decoration: none;
+}
+
+ul.great {
+	list-style-image: url('../images/sunset-icon-36.png');
+	font-weight: 400;
+	font-size: 14pt;
+	color: #FF9A40;
+	line-height: 1.4;
 }
 
 
